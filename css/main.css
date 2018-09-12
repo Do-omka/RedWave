@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
+html {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+input:hover {
+  border: none;
+  outline: none;
+}
+input:active {
+  border: none;
+  outline: none;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*::before,
+*::after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+body {
+  font-family: "Open Sans";
+  font-size: 20px;
+}
+header,
+footer {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  box-shadow: 0 3px 11px -6px rgba(0, 0, 0, 0.25);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+nav {
+  align-items: stretch;
+  justify-content: space-between;
+}
+nav .navbar-toggler {
+  flex: 0;
+  margin-right: 15px;
+}
+nav .nav_list {
+  justify-content: space-between;
+}
+nav .nav_list a {
+  text-align: center;
+  display: inline-block;
+}
+h1 {
+  color: #232323;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  font-weight: 600;
+}
+.button {
+  border-radius: 5px;
+  background-color: #0089f9;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.button:hover {
+  color: white;
+}

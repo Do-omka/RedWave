@@ -73,13 +73,13 @@ nav {
   justify-content: space-between;
 }
 nav .navbar-toggler {
-  flex: 0;
   margin-right: 15px;
 }
 nav .nav_list {
   justify-content: space-between;
 }
 nav .nav_list a {
+  flex: 1 1 auto;
   text-align: center;
   display: inline-block;
 }

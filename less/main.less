@@ -2,9 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
 
-// html {
-// 	height: 100%;
-// }
+html {
+	height: 100%;
+}
 
 * {
 	margin: 0;
@@ -47,13 +47,13 @@ table {
 	border-spacing: 0;
 }
 
-*::before,
-*::after {
-	content: '';
-	display: block;
-	position: absolute;
-	box-sizing: border-box;
-}
+// *::before,
+// *::after {
+// 	content: '';
+// 	display: block;
+// 	position: absolute;
+// 	box-sizing: border-box;
+// }
 
 @media (min-width: 992px){
   .container{
@@ -78,6 +78,10 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 25px 0;
+	.logo {
+		height: 50px;
+	}
 }
 
 header {
@@ -145,4 +149,28 @@ h3 {
 		color: white;
 	}
 	align-self: center;
+}
+
+.link {
+	color: rgb(74, 144, 226);
+	text-decoration: underline;
+	&:hover {
+		color: rgb(74, 144, 226);
+		text-decoration: underline;
+	}
+}
+
+#faq {
+	padding: 35px 0 55px;
+	background-color: rgb(249, 253, 255);
+	.qa {
+		h3 {
+			&:before {
+				content: "Q: ";
+			}
+			&:after {
+				content: "?";
+			}
+		}
+	}
 }

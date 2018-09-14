@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
+html {
+  height: 100%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -33,13 +36,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-*::before,
-*::after {
-  content: '';
-  display: block;
-  position: absolute;
-  box-sizing: border-box;
-}
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -60,6 +56,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 25px 0;
+}
+header .logo,
+footer .logo {
+  height: 50px;
 }
 header {
   box-shadow: 0 3px 11px -6px rgba(0, 0, 0, 0.25);
@@ -114,4 +115,22 @@ h3 {
 }
 .button:hover {
   color: white;
+}
+.link {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+#faq {
+  padding: 35px 0 55px;
+  background-color: #f9fdff;
+}
+#faq .qa h3:before {
+  content: "Q: ";
+}
+#faq .qa h3:after {
+  content: "?";
 }

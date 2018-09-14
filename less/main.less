@@ -6,6 +6,11 @@ html {
 	height: 100%;
 }
 
+.f() {
+	display: flex;
+	flex-direction: column;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -157,6 +162,31 @@ h3 {
 	&:hover {
 		color: rgb(74, 144, 226);
 		text-decoration: underline;
+	}
+}
+
+#when {
+	.reasons {
+		div {
+			.f;
+			align-items: center;
+			text-align: center;
+		}
+		.icon {
+			width: 60px;
+			height: 60px;
+			background-position: center;
+			background-repeat: no-repeat;
+			&.customer {
+				background-image: url(../img/customer.png);
+			}
+			&.agency {
+				background-image: url(../img/agency.png);
+			}
+			&.docs {
+				background-image: url(../img/docs.png);
+			}
+		}
 	}
 }
 

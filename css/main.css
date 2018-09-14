@@ -124,6 +124,27 @@ h3 {
   color: #4a90e2;
   text-decoration: underline;
 }
+#when .reasons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#when .reasons .icon {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#when .reasons .icon.customer {
+  background-image: url(../img/customer.png);
+}
+#when .reasons .icon.agency {
+  background-image: url(../img/agency.png);
+}
+#when .reasons .icon.docs {
+  background-image: url(../img/docs.png);
+}
 #faq {
   padding: 35px 0 55px;
   background-color: #f9fdff;

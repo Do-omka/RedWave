@@ -92,9 +92,10 @@ section {
 }
 h1,
 h2 {
+  align-self: center;
   text-align: center;
   max-width: 66.7%;
-  margin: 0 auto 25px;
+  margin-bottom: 25px;
 }
 h1 {
   color: #232323;
@@ -112,6 +113,7 @@ h3 {
   font-weight: 600;
 }
 .button {
+  font-size: 20px;
   border-radius: 5px;
   background-color: #0089f9;
   color: white;
@@ -192,4 +194,90 @@ h3 {
 }
 #faq .qa h3:after {
   content: "?";
+}
+form {
+  align-self: center;
+  padding: 0 20px;
+  font-size: 16px;
+}
+form input {
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+  cursor: inherit;
+}
+legend {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.legend::before,
+.legend::after {
+  content: '';
+  border: 2px solid rgba(216, 216, 216, 0.4);
+  flex: 1 0 auto;
+}
+.legend legend {
+  flex: 0 1 0;
+  padding: 0 10px;
+}
+.input {
+  margin-bottom: 20px;
+  position: relative;
+}
+.input .show {
+  width: 30px;
+  height: 18px;
+  background: url(../img/show.svg) no-repeat center;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  z-index: 1;
+}
+.input:not(.button) {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.input:not(.button)::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.input:not(.button) input {
+  flex: 1 0 auto;
+  text-align: left;
+  padding: 0 15px;
+}
+.input:not(.button) input[type="password"] {
+  padding-right: 60px;
+}
+.input:not(.button) label {
+  margin: 0;
+  border-right: 1px solid rgba(151, 151, 151, 0.1);
+  width: 18px;
+  height: 18px;
+  box-sizing: content-box;
+  padding: 15px;
+}
+.input:not(.button) label[for="account"] {
+  background: url(../img/account.svg) no-repeat center;
+}
+.input:not(.button) label[for="password"] {
+  background: url(../img/password.svg) no-repeat center;
+}
+.forgot {
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.forgot * {
+  flex: 1 1 auto;
 }

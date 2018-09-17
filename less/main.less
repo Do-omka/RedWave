@@ -147,10 +147,10 @@ h3 {
 	padding: 10px 25px;
 	cursor: pointer;
 	text-align: center;
+	align-self: center;
 	&:hover {
 		color: white;
 	}
-	align-self: center;
 }
 
 .link {
@@ -244,7 +244,6 @@ h3 {
 form {
 	align-self: center;
 	padding: 0 20px;
-	font-size: 16px;
 	input {
 		background-color: inherit;
 		color: inherit;
@@ -275,47 +274,58 @@ legend {
 	}
 }
 .input {
-	margin-bottom: 20px;
 	position: relative;
-	.show {
-		width: 30px;
-		height: 18px;
-		background: url(../img/show.svg)  no-repeat center;
-		position: absolute;
-		right: 16px;
-		top: 50%;
-		transform: translate(0, -50%);
-		cursor: pointer;
-		z-index: 1;
-	}
-}
-.input:not(.button) {
-	&::placeholder {
-	   color: rgba(0, 0, 0, 0.2);
-	}
 	display: flex;
+	padding: 0;
 	border-radius: 5px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	input {
-		flex: 1 0 auto;
-		text-align: left;
-		padding: 0 15px;
-		&[type="password"]{
-			padding-right: 60px;
-		}
-	}
+	border: 1px solid transparent;
 	label {
+		order: -1;
 		margin: 0;
-		border-right: 1px solid rgba(151, 151, 151, 0.1);
+		border-right: 2px solid rgba(255, 255, 255, 0.2);
 		width: 18px;
 		height: 18px;
-		box-sizing: content-box;
 		padding: 15px;
+		box-sizing: content-box;
 		&[for="account"] {
 			background: url(../img/account.svg)  no-repeat center;
 		}
 		&[for="password"] {
 			background: url(../img/password.svg) no-repeat center;
+		}
+		&[for="g"] {
+			background: url(../img/g.svg) no-repeat center;
+		}
+	}
+	input {
+		flex: 1 0 auto;
+		padding: 0 15px;
+		&[type="password"]{
+			padding-right: 55px;
+		}
+	}
+	.toggle {
+		width: 30px;
+		height: 18px;
+		background: url(../img/toggle.png)  no-repeat center;
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		transform: translate(0, -50%);
+		cursor: pointer;
+		opacity: 0.1;
+	}
+}
+.input:not(.button) {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	label {
+		border-right: 1px solid rgba(151, 151, 151, 0.1);
+	}
+	input {
+		text-align: left;
+		&::placeholder {
+		   color: rgba(0, 0, 0, 0.2);
+		   font-size: 16px;
 		}
 	}
 }
@@ -329,5 +339,45 @@ legend {
 	justify-content: space-between;
 	& * {
 		flex: 1 1 auto;
+	}
+}
+
+.remark {
+	color: rgb(102, 102, 102);
+	font-size: 16px;
+}
+
+.terms label {
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	padding-left: 15px;
+	margin-bottom: 30px;
+}
+
+fieldset {
+	.f;
+	> input,
+	.input {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+[type="checkbox"] {
+	display: none;
+	+ label::before {
+		display: inline-block;
+		content: '';
+		width: 18px;
+		height: 18px;
+		border-radius: 2px;
+		margin-right: 30px;
+	}
+	&:checked + label::before {
+		border: 1px solid rgb(0, 137, 249);
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAYAAABv7tTEAAAAoElEQVQoU2NkIBZ0/TJg+P9/PQMjYyAjUXogGvYD1QowMPw/SFgTigaGiwxsbA74NXX+DACaPh9iA0QDQyHjB4im9u8ODJWcB1Cc2vUrAegkkAYQgGsAcRgZYJL/GRYwVLAngpWgaPh/kIGNPQBkA8xQhCaQCEgjE+NBJBsWMpSzJ6AHFsR5qE6BqcGqAeI8GEDViFMDqiaEjQ7YnITsRADARUqe4Z3BOAAAAABJRU5ErkJggg==) no-repeat center;
+	}
+	&:not(:checked) + label::before {
+		border: 1px solid rgb(208, 2, 27);
 	}
 }

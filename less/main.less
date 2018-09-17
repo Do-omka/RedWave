@@ -300,22 +300,20 @@ legend {
 	input {
 		flex: 1 0 auto;
 		padding: 0 15px;
-		&[type="password"]{
-			padding-right: 55px;
-		}
 	}
 	.toggle {
 		width: 30px;
 		height: 18px;
 		background: url(../img/toggle.png)  no-repeat center;
 		position: absolute;
-		right: 16px;
+		right: 15px;
 		top: 50%;
 		transform: translate(0, -50%);
 		cursor: pointer;
 		opacity: 0.1;
 	}
 }
+
 .input:not(.button) {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	label {
@@ -327,6 +325,12 @@ legend {
 		   color: rgba(0, 0, 0, 0.2);
 		   font-size: 16px;
 		}
+	}
+}
+
+.input.password {
+	input {
+		padding-right: 55px;
 	}
 }
 

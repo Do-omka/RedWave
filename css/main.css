@@ -173,13 +173,13 @@ h3 {
   background-repeat: no-repeat;
 }
 #when .reasons .icon.customer {
-  background-image: url(../img/customer.png);
+  background-image: url(../img/customer.svg);
 }
 #when .reasons .icon.agency {
-  background-image: url(../img/agency.png);
+  background-image: url(../img/agency.svg);
 }
 #when .reasons .icon.docs {
-  background-image: url(../img/docs.png);
+  background-image: url(../img/docs.svg);
 }
 #faq {
   padding: 35px 0 55px;
@@ -255,7 +255,7 @@ legend {
 .input .toggle {
   width: 30px;
   height: 18px;
-  background: url(../img/toggle.png) no-repeat center;
+  background: url(../img/visibility.png) no-repeat center;
   position: absolute;
   right: 15px;
   top: 50%;

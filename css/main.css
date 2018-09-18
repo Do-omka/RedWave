@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
 html {
   height: 100%;
+  font-size: 20px;
 }
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 1rem;
   font: inherit;
   box-sizing: border-box;
 }
@@ -43,7 +44,6 @@ table {
 }
 body {
   font-family: "Open Sans";
-  font-size: 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -99,20 +99,20 @@ h2 {
 h1 {
   color: #232323;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 2.4rem;
 }
 h2 {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2rem;
 }
 h3 {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .button {
-  font-size: 20px;
+  font-size: 1rem;
   border-radius: 5px;
   background-color: #0089f9;
   color: white;
@@ -150,12 +150,12 @@ h3 {
 }
 .editor .name {
   color: #0089f9;
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .editor .description {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 .texts h3 {
   margin: 10px 0 25px 25px;
@@ -206,7 +206,7 @@ form input {
 }
 legend {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 .legend {
   display: flex;
@@ -274,7 +274,7 @@ legend {
 }
 .input:not(.button) input::placeholder {
   color: rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 .input.password input {
   padding-right: 55px;
@@ -282,7 +282,7 @@ legend {
 .forgot {
   margin: 20px 0;
   color: rgba(0, 0, 0, 0.5);
-  font-size: 18px;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -292,11 +292,11 @@ legend {
 }
 .remark {
   color: #666666;
-  font-size: 16px;
+  font-size: 0.8rem;
 }
 .terms label {
   color: rgba(0, 0, 0, 0.2);
-  font-size: 16px;
+  font-size: 0.8rem;
   padding-left: 15px;
   margin-bottom: 30px;
 }

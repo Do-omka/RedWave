@@ -219,6 +219,9 @@ form input {
 form textarea {
   resize: none;
 }
+form .button {
+  align-self: stretch;
+}
 legend {
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
@@ -320,7 +323,6 @@ fieldset {
   flex-direction: column;
 }
 fieldset > * {
-  width: 100%;
   margin-bottom: 20px;
 }
 [type="checkbox"] {
@@ -431,6 +433,7 @@ fieldset > * {
 }
 .create-text .button {
   width: 255px;
+  align-self: center;
 }
 .modal-content {
   padding: 40px 25px 25px;

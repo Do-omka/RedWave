@@ -66,8 +66,8 @@ section,
 main {
   flex: 1 0 auto;
 }
-header,
-footer {
+body > header,
+body > footer {
   min-height: 100px;
   display: flex;
   flex-direction: column;
@@ -75,8 +75,8 @@ footer {
   padding: 25px 0;
   flex: 0 0 auto;
 }
-header .logo,
-footer .logo {
+body > header .logo,
+body > footer .logo {
   height: 50px;
 }
 header {
@@ -314,8 +314,7 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
-fieldset > input,
-fieldset .input {
+fieldset > * {
   width: 100%;
   margin-bottom: 20px;
 }

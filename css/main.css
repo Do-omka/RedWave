@@ -154,6 +154,10 @@ h3 {
   color: #4a90e2;
   text-decoration: underline;
 }
+.correction {
+  text-decoration: underline wavy #e12229;
+  text-underline-position: under;
+}
 .texts h3 {
   margin: 10px 0 1.25rem 1.25rem;
 }

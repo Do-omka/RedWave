@@ -86,14 +86,11 @@ main {
 body {
 	> header,
 	> footer {
-		min-height: 5rem;
 		.f;
-		justify-content: center;
-		padding: 25px 0;
-		.logo {
-			height: 50px;
-		}
 		flex: 0 0 auto;
+		min-height: 5rem;
+		justify-content: center;
+		padding: 1.25rem 0;
 	}
 	> header {
 		box-shadow: 0 3px 11px -6px rgba(0, 0, 0, 0.25);
@@ -101,19 +98,25 @@ body {
 }
 
 nav {
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	.navbar-toggler {
-		margin-right: 15px;
-	}
 	.nav_list {
-		justify-content: space-between;
+		justify-content: flex-end;
+		margin-left: -1.25rem;
+		margin-right: -1.25rem;
 		a {
-			flex: 1 1 auto;
 			text-align: center;
-			display: inline-block;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+			.button {
+				padding-left: 1.8rem;
+				padding-right: 1.8rem;
+			}
 		}
 	}
 }
+
 section {
 	margin: 4.25rem 0 1.25rem;
 }

@@ -69,33 +69,34 @@ main {
 }
 body > header,
 body > footer {
-  min-height: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 25px 0;
   flex: 0 0 auto;
-}
-body > header .logo,
-body > footer .logo {
-  height: 50px;
+  min-height: 5rem;
+  justify-content: center;
+  padding: 1.25rem 0;
 }
 body > header {
   box-shadow: 0 3px 11px -6px rgba(0, 0, 0, 0.25);
 }
 nav {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-nav .navbar-toggler {
-  margin-right: 15px;
 }
 nav .nav_list {
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 nav .nav_list a {
-  flex: 1 1 auto;
   text-align: center;
-  display: inline-block;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+nav .nav_list a .button {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
 section {
   margin: 4.25rem 0 1.25rem;

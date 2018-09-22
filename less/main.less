@@ -247,6 +247,7 @@ h3 {
 }
 
 form {
+	.f;
 	align-self: center;
 	padding: 0 20px;
 	input {
@@ -254,6 +255,9 @@ form {
 		color: inherit;
 		text-align: center;
 		cursor: inherit;
+	}
+	textarea {
+		resize: none;
 	}
 }
 
@@ -436,5 +440,53 @@ fieldset {
 			background-color: white;
 			color: rgb(0, 163, 250);
 		}
+	}
+}
+
+.create-text {
+	width: 100%;
+	position: relative;
+	padding: 0;
+	.count {
+		position: absolute;
+		top: -15px;
+		right: 15px;
+		transform: translate(0, -100%);
+		color: rgba(0, 0, 0, 0.2);
+		font-size: 0.9rem;
+	}
+	.text {
+		min-height: 11rem;
+		padding: 12px 15px;
+		margin-bottom: 30px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.2);
+			font-size: 0.9rem;
+		}
+
+	}
+	h2 {
+		font-size: 1rem;
+		font-weight: 400;
+		text-align: left;
+		align-self: flex-start;
+		margin-bottom: 15px;
+	}
+	.comment {
+		min-height: 5rem;
+		padding: 12px 15px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border: 1px solid rgba(26, 24, 142, 0.1);
+		background-color: #f9fdff;
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.6);
+			font-size: 0.8rem;
+		}
+	}
+	.button {
+		width: 255px;
 	}
 }

@@ -37,6 +37,14 @@
 		<section>
 			<div class="container">
 				<h1>Check new text</h1>
+
+				<form action="" method="" class="create-text">
+					<div class="count"></div>
+					<textarea class="text" placeholder="Text"></textarea>
+					<h2>If you have any comments for your editor put it below</h2>
+					<textarea class="comment" placeholder="For example: “ This text i was writing specialy for my website and i wanna check how it right”"></textarea>
+					<input type="submit" class="button" value="Submit">
+				</form>
 			</div>
 		</section>
 	</main>
@@ -64,5 +72,11 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script>
+		document.querySelector('.create-text .count').innerHTML = document.querySelector('.create-text .text').value.length;
+		document.querySelector('.create-text .text').addEventListener('input', function (e) {
+			document.querySelector('.create-text .count').innerHTML = e.target.value.length
+		})
+	</script>
 </body>
 </html>

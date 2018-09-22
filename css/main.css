@@ -205,6 +205,8 @@ h3 {
   content: "?";
 }
 form {
+  display: flex;
+  flex-direction: column;
   align-self: center;
   padding: 0 20px;
 }
@@ -213,6 +215,9 @@ form input {
   color: inherit;
   text-align: center;
   cursor: inherit;
+}
+form textarea {
+  resize: none;
 }
 legend {
   color: rgba(0, 0, 0, 0.5);
@@ -380,4 +385,50 @@ fieldset > * {
 .plan.active .button {
   background-color: white;
   color: #00a3fa;
+}
+.create-text {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+.create-text .count {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  transform: translate(0, -100%);
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+.create-text .text {
+  min-height: 11rem;
+  padding: 12px 15px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.create-text .text::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+.create-text h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 15px;
+}
+.create-text .comment {
+  min-height: 5rem;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(26, 24, 142, 0.1);
+  background-color: #f9fdff;
+}
+.create-text .comment::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+}
+.create-text .button {
+  width: 255px;
 }

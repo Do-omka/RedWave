@@ -142,33 +142,32 @@ h3 {
   color: #4a90e2;
   text-decoration: underline;
 }
-.text {
+.texts h3 {
+  margin: 10px 0 25px 25px;
+}
+.texts .text {
   padding: 25px;
   box-shadow: 0 3px 13px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
-  background-color: #ffffff;
   margin-bottom: 30px;
 }
-.editor {
+.texts .editor {
   margin-left: auto;
   display: flex;
   padding-left: 40px;
 }
-.editor .photo {
+.texts .editor .photo {
   border-radius: 50%;
   margin-right: 20px;
 }
-.editor .name {
+.texts .editor .name {
   color: #0089f9;
   font-size: 1.2rem;
   font-weight: 600;
 }
-.editor .description {
+.texts .editor .description {
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
-}
-.texts h3 {
-  margin: 10px 0 25px 25px;
 }
 #when .reasons div {
   display: flex;

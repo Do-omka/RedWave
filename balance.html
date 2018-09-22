@@ -44,7 +44,7 @@
 							<h2>Professional</h2>
 							<div class="price">6$</div>
 							<div class="offer">10000 characters</div>
-							<button class="buy button">Buy</button>
+							<button class="buy button" data-toggle="modal" data-target=".payment">Buy</button>
 						</div>
 					</div>
 
@@ -53,7 +53,7 @@
 							<h2>Professional</h2>
 							<div class="price">6$</div>
 							<div class="offer">10000 characters</div>
-							<button class="buy button">Buy</button>
+							<button class="buy button" data-toggle="modal" data-target=".payment">Buy</button>
 						</div>
 					</div>
 
@@ -62,13 +62,29 @@
 							<h2>Professional</h2>
 							<div class="price">6$</div>
 							<div class="offer">10000 characters</div>
-							<button class="buy button">Buy</button>
+							<button class="buy button" data-toggle="modal" data-target=".payment">Buy</button>
 						</div>
 					</div>
 				</div>
 
 			</div>
 		</section>
+		<div class="modal fade payment" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3>Payment Method</h3>
+					<div class="img">
+						<img src="img/paypal.png" alt="paypal" width="194px" height="50px">
+					</div>
+					<div class="description">
+						All credit card transactions are processed using secure encryption — the same level of encryption used by leading banks. Payment information is transmitted, stored, and processed securely on a PCI-Compliant network.
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<footer>

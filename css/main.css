@@ -172,20 +172,40 @@ h3 {
 }
 .texts .editor {
   margin-left: auto;
-  display: flex;
 }
 .texts .editor .photo {
-  border-radius: 50%;
   margin-right: 20px;
 }
-.texts .editor .name {
+.editor {
+  display: flex;
+}
+.editor .photo {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.editor .name {
   color: #0089f9;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 600;
 }
-.texts .editor .description {
+.editor .description {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 0.9rem;
+  font-size: 0.9em;
+}
+article.text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 20px;
+  padding-right: 27px;
+}
+article.text header {
+  display: flex;
+  justify-content: space-between;
+}
+article.text footer {
+  display: flex;
+  justify-content: flex-end;
 }
 #when .reasons div {
   display: flex;

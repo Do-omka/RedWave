@@ -68,7 +68,7 @@ main {
 }
 body > header,
 body > footer {
-  min-height: 100px;
+  min-height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,14 +97,14 @@ nav .nav_list a {
   display: inline-block;
 }
 section {
-  margin: 85px 0 25px;
+  margin: 4.25rem 0 1.25rem;
 }
 h1,
 h2 {
   align-self: center;
   text-align: center;
   max-width: 66.7%;
-  margin-bottom: 25px;
+  margin-bottom: 1.25rem;
 }
 h1 {
   color: #232323;

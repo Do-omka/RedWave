@@ -389,3 +389,52 @@ fieldset {
 		border: 1px solid rgb(208, 2, 27);
 	}
 }
+
+.plans {
+	margin: 0 -1.6rem;
+	justify-content: space-between;
+	> * {
+		padding: 0 1.6rem;
+	}
+}
+
+.plan {
+	.f;
+	> * {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	padding: 1.5rem;
+	padding-bottom: 35px;
+	box-shadow: 0 3px 13px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.8);
+
+	h2 {
+		font-size: 1rem;
+		color: rgba(0, 0, 0, 0.4);
+	}
+	.price {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	.offer {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+	.button {
+		margin-top: 10px;
+		width: 181px;
+	}
+
+	&.active {
+		background-color: rgb(0, 137, 249);
+		> * {
+			color: white;
+		}
+		.button {
+			background-color: white;
+			color: rgb(0, 163, 250);
+		}
+	}
+}

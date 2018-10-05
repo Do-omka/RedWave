@@ -1,4 +1,4 @@
-// out: ../css/main.css, compress: false
+// out: ../css/main.css
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
 
@@ -475,13 +475,30 @@ fieldset {
 	&:not(:checked) + label::before {
 		border: 1px solid rgb(208, 2, 27);
 	}
+
+	padding: 0 1.6rem;
+	&:first-of-type {
+		padding-left: 0;
+	}
+	&:last-of-type {
+		padding-right: 0;
+	}
 }
 
 .plans {
-	margin: 0 -1.6rem;
-	justify-content: space-between;
 	> * {
-		padding: 0 1.6rem;
+		@media (min-width: 992px) {
+			padding: 0 0.8rem;
+			&:first-of-type {
+				padding-left: 0;
+				padding-right: 2.4rem;
+			}
+			&:last-of-type {
+				padding-right: 0;
+				padding-left: 2.4rem;
+			}
+		}
+
 	}
 }
 

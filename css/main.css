@@ -403,6 +403,7 @@ fieldset > * {
 }
 [type="checkbox"] {
   display: none;
+  padding: 0 1.6rem;
 }
 [type="checkbox"] + label::before {
   display: inline-block;
@@ -419,12 +420,24 @@ fieldset > * {
 [type="checkbox"]:not(:checked) + label::before {
   border: 1px solid #d0021b;
 }
-.plans {
-  margin: 0 -1.6rem;
-  justify-content: space-between;
+[type="checkbox"]:first-of-type {
+  padding-left: 0;
 }
-.plans > * {
-  padding: 0 1.6rem;
+[type="checkbox"]:last-of-type {
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  .plans > * {
+    padding: 0 0.8rem;
+  }
+  .plans > *:first-of-type {
+    padding-left: 0;
+    padding-right: 2.4rem;
+  }
+  .plans > *:last-of-type {
+    padding-right: 0;
+    padding-left: 2.4rem;
+  }
 }
 .plan {
   display: flex;

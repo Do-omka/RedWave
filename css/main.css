@@ -426,6 +426,9 @@ fieldset > * {
 [type="checkbox"]:last-of-type {
   padding-right: 0;
 }
+.plans {
+  margin: 0;
+}
 @media (min-width: 992px) {
   .plans > * {
     padding: 0 0.8rem;

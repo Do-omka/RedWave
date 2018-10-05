@@ -470,10 +470,8 @@ fieldset > * {
   padding: 0;
 }
 .create-text .count {
-  position: absolute;
-  top: -15px;
-  right: 15px;
-  transform: translate(0, -100%);
+  position: relative;
+  align-self: flex-end;
   color: rgba(0, 0, 0, 0.2);
   font-size: 0.9rem;
 }

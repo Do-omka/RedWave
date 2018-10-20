@@ -11,25 +11,29 @@ const
 	,concat = require('gulp-concat')
 	,del = require('del')
 
-function mincss() {
-	const processors = [
-		require('autoprefixer')
-		,require('postcss-csso')
-		,require('postcss-focus')
-	]
+function mincss () {
 	return gulp.src('src/less/*.less')
-		.pipe(sourcemaps.init({ loadMaps: true }))
+		.pipe(sourcemaps.init({loadMaps: true}))
 		.pipe(sourcemaps.identityMap())
+		.pipe(postcss([
+			require('postcss-svgo')
+		]
+		,{syntax: require('postcss-less')}
+		))
 		.pipe(concat('main.css'))
 		.pipe(less())
-		.pipe(postcss(processors))
+		.pipe(postcss([
+			require('autoprefixer')
+			,require('postcss-csso')
+			,require('postcss-focus')
+		]))
 		.pipe(sourcemaps.write(''))
 		.pipe(gulp.dest('docs/css'))
 }
 
 function minhtml () {
 	return gulp.src('src/*.html')
-		.pipe(htmlmin({ collapseWhitespace: true }))
+		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('docs'))
 }
 
@@ -54,11 +58,11 @@ function minjs (cb) {
 	)
 }
 
-function watchcss() {
+function watchcss () {
 	return gulp.watch('src/less/*.less', mincss)
 }
 
-function watchjs() {
+function watchjs () {
 	return gulp.watch('src/js/*.js', minjs)
 }
 
